@@ -60,3 +60,21 @@ function pigIt(str){
         result=result.slice(0,result.length-1);
     }
     return(result);
+  
+}
+
+
+function pigIt(str){
+  //Code here
+  return str.split(' ').map(word => {
+    return word.substring(1) + word[0] + 'ay';
+  }).join(' ');
+  
+  
+}
+
+
+function pigIt(str){
+  return str.replace(/\w+/g, match => match.slice(1) + match.charAt(0) + "ay");
+}
+
